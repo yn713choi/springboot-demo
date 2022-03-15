@@ -54,4 +54,21 @@ public class DemoController {
         } 
         return hostname + ", " + hostAddress;
     } 
+
+    @ResponseBody
+    @RequestMapping(value = "/countdown") 
+    public Integer countdown(){ 
+        int i = 0;
+        try {
+            while(i<100){
+                System.out.println("sysout ::: " + Integer.toString(i));
+                logger.debug("debug ::: {}", i);
+                i++;
+                Thread.sleep(1000);
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }  
+        return i;
+    } 
 }

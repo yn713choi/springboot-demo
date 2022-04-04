@@ -21,4 +21,4 @@
 
 ###### dependency, plugin 추가
 - sleuth
-- jib
+- jib (`./gradlew jib --image=yn713choi/springboot-demo-jib`)

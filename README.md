@@ -18,3 +18,7 @@
 `docker run -p 8080:8080 springboot-demo`
 
 ###### 로컬환경에서 http://localhost:8080/
+
+###### dependency, plugin 추가
+- sleuth
+- jib
